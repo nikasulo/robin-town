@@ -1,0 +1,42 @@
+@import '../../components'; 
+
+.featured-content-card {
+  position: relative;
+  height: 300px;
+  
+  .overlay {
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2em;
+  }
+  
+  .featured-content-title {
+    margin-bottom: 1em;
+    color: $accent-white;
+    font-family: $secondary-font;
+  }
+  
+  .featured-content-cta {
+    padding: 1em;
+    font-family: $primary-font;
+    border: none;
+    background-color: $accent-white;
+    border-radius: 50px;
+  }
+
+  &.large {
+    width: 48%;
+
+    @media #{$medium-mq} {
+      width: 40%;
+    }
+  }
+
+  &.small {
+    width: 23%;
+
+    @media #{$medium-mq} {
+      width: 28%;
+    }
+  }
+}

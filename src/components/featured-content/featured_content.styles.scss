@@ -1,0 +1,16 @@
+@import '../../components';
+
+div.featured-content {
+  padding: 4em;
+  justify-content: space-between;
+  display: none;
+
+  @media #{$medium-mq} {
+    display: flex;
+    padding: 2em;
+  }
+
+  .featured-content-card {
+    padding: 2em;
+  }
+}
