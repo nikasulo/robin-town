@@ -1,8 +1,26 @@
+@import '../../components';
+
 .nav-bar {
   width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 1em;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  color: black;
+
+  &.transparent-nav {
+    background: 0 0;
+    position: absolute;
+    color: $accent-white;
+  }
+  
+
+  @media #{$large-mq} {
+    padding: 1em 3em;
+    font-size: .9em;
+  }
 
   .logo {
     background-image: url('../../assets/logo/1.png');
@@ -15,18 +33,46 @@
 
   .profile-icon {
     display: none;
+
+    @media #{$large-mq} {
+      display: inline;
+    }
+  }
+
+  .left {
+    width: 30%;
   }
 
   .center {
     display: none;
+    justify-content: center;
+    width: 70%;
+    
+    @media #{$large-mq} {
+      display: flex;
+    }
+    
+    a {
+      margin-right: 4em;
+      text-decoration: none;
+      font-family: $secondary-font;
+      color: $accent-white;
+    }
   }
-
+  
   .right {
     justify-content: space-between;
 
     i {
       margin-right: 1em;
-      color: rgb(155, 155, 155);
+
+      @media #{$medium-mq} {
+        margin-right: 2em;
+      }
+
+      @media #{$large-mq} {
+        margin-right: 3em;
+      }
     }
   }
 }
