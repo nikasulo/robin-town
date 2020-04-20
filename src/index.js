@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { App } from './components/App';
+import App from './components/App';
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import rootReducer from './reducers/root.reducer';
@@ -20,8 +20,6 @@ const getStateFromLocalStorage = () => {
     if (parsedState) {
       return parsedState;
     }
-
-    return null;
 
   } catch(error) {
     return null;
