@@ -1,0 +1,56 @@
+@import './assets/scss/fontawesome.scss';
+@import './assets/scss/brands.scss';
+@import './assets/scss/regular.scss';
+@import './assets/scss/solid.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.column {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.search-icon {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-search);
+  }
+}
+
+.shopping-cart-icon {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-shopping-cart);
+  }
+}
+
+.profile-icon {
+  @extend %fa-icon;
+  @extend .far;
+
+  &:before {
+    content: fa-content($fa-var-user);
+  }
+}
+
+.menu-icon {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-bars);
+  }
+}
