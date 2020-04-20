@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './navigation.styles.scss';
 
-const Navigation = () => {
+const Navigation = ({ currentLocation }) => {
   return (
-    <div className="nav-bar row">
+    <div className={`${currentLocation === "home" ? 'transparent-nav' : ''} nav-bar row`}>
       <div className="left row">
         <div className="logo"></div>
         <p className="logo-text"></p>
