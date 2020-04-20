@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Karla|Roboto:900&display=swap');
+
+// Fonts
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Karla', sans-serif;
+
+// Colors
+$transparent-grey: rgba(0, 0, 0, 0.287);
+$accent-white: rgb(246, 246, 246);
+$primary-orange: rgb(255, 177, 31);
+
+// Breakpoints
+$medium-bp: 768px;
+$large-bp:  1024px;
+
+// Media Queries
+$medium-mq: "(min-width: #{$medium-bp})";
+$large-mq: "(min-width: #{$large-bp})";

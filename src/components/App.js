@@ -1,15 +1,17 @@
 import React from 'react';
-import Navigation from './navigation/Navigation.component';
-import { BrowserRouter as Router, Switch } from 'react-router-dom';
-import Hero from './hero/Hero.component';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Navigation from '../containers/navigation/Navigation.container';
+import Home from '../containers/home/Home.container';
 
-export const App = () => {
+const App = ({ currentLocation }) => {
   return (
     <Router>
+      <Navigation currentLocation={currentLocation}/>
       <Switch>
-        <Navigation />
-        <Hero />
+        <Route exact path="/" component={Home}/>
       </Switch>
-    </Router>
+    </Router>  
   )
 };
+
+export default App;
