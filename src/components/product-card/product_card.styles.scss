@@ -1,0 +1,37 @@
+@import '../../components';
+
+.product-card {
+  width: 100%;
+  height: 450px;
+  text-align: left;
+  font-family: $secondary-font;
+  margin-bottom: 1em;
+
+  @media #{$medium-mq} {
+    width: 48%;
+  }
+
+  @media #{$large-mq} {
+    width: 23%;
+  }
+
+  .product-card-image {
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .product-name {
+    font-size: .8em;
+    margin-top: .5em;
+  }
+
+  .product-price {
+    font-size: .9em;
+    margin-top: .3em;
+    color: $primary-red;
+  }
+  
+}
