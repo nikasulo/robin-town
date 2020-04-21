@@ -22,26 +22,26 @@ const Footer = () => {
       </div>
       <div className="center-left">
         <FooterLinkSection sectionTitle={"Shopping Online"}>
-          <Link className="footer-link">Order Status</Link>
-          <Link className="footer-link">Shipping and Delivery</Link>
-          <Link className="footer-link">Returns</Link>
-          <Link className="footer-link">Payment Options</Link>
-          <Link className="footer-link">Contact Us</Link>
+          <Link to="#" className="footer-link">Order Status</Link>
+          <Link to="#" className="footer-link">Shipping and Delivery</Link>
+          <Link to="#" className="footer-link">Returns</Link>
+          <Link to="#" className="footer-link">Payment Options</Link>
+          <Link to="#" className="footer-link">Contact Us</Link>
         </FooterLinkSection>
       </div>
       <div className="center-right">
         <FooterLinkSection sectionTitle={"Information"}>
-          <Link className="footer-link">Gift Cards</Link>
-          <Link className="footer-link">Find a store</Link>
-          <Link className="footer-link">Newsletter</Link>
-          <Link className="footer-link">Become a member</Link>
-          <Link className="footer-link">Site Feedback</Link>
+          <Link to="#" className="footer-link">Gift Cards</Link>
+          <Link to="#" className="footer-link">Find a store</Link>
+          <Link to="#" className="footer-link">Newsletter</Link>
+          <Link to="#" className="footer-link">Become a member</Link>
+          <Link to="#" className="footer-link">Site Feedback</Link>
         </FooterLinkSection>
       </div>
       <div className="right row">
         <FooterLinkSection sectionTitle={"Contact"}>
-          <Link className="footer-link">shop@robintown.com</Link>
-          <Link className="footer-link">Hotline: +48 800 900 100 200</Link>
+          <Link to="#" className="footer-link">shop@robintown.com</Link>
+          <Link to="#" className="footer-link">Hotline: +48 800 900 100 200</Link>
         </FooterLinkSection>
       </div>
     </div>
