@@ -11,16 +11,30 @@
   position: relative;
   color: $accent-white;
 
+  @media #{$large-mq} {
+    height: 600px;
+  }
+
   .overlay {
     padding: 2em;
     justify-content: center;
-  
+    
+    @media #{$large-mq} {
+      padding: 5em;
+    }
   }
 
   .hero-text {
     font-family: $primary-font;
     font-size: 2.5em;
     margin-bottom: .8em;
+
+    @media #{$large-mq} {
+      font-size: 5em;
+      width: 60%;
+      margin-bottom: .3em;
+
+    }
   }
 
   .cta-text {

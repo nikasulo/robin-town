@@ -22,6 +22,13 @@
     border: none;
     background-color: $accent-white;
     border-radius: 50px;
+    transition: .5s;
+
+      &:hover {
+        background-color: $primary-orange;
+        cursor: pointer;
+        color: $accent-white;
+      }
   }
 
   &.large {

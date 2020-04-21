@@ -1,13 +1,16 @@
 @import '../../components';
 
 div.featured-content {
-  padding: 4em;
+  padding: 1em;
   justify-content: space-between;
   display: none;
 
   @media #{$medium-mq} {
     display: flex;
-    padding: 2em;
+  }
+
+  @media #{$large-mq} {
+    padding: 5em;
   }
 
   .featured-content-card {

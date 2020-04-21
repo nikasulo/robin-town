@@ -16,6 +16,12 @@
   align-items: center;
 }
 
+.row-with-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
 .column {
   display: flex;
   flex-flow: column nowrap;
@@ -66,6 +72,43 @@
   }
 }
 
+.truck-icon {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-truck);
+  }
+}
+
+.credit-card-icon {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-credit-card);
+  }
+}
+
+
+.money-bill-icon {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-money-bill);
+  }
+}
+
+.smile-wink-icon {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-smile-wink);
+  }
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -73,6 +116,10 @@
   right: 0;
   bottom: 0;
   background-color: $transparent-grey;
-  background-image: radial-gradient(rgb(90, 90, 90) 33%, transparent 33%);
+  background-image: radial-gradient(rgba(0, 0, 0, 0.13) 33%, transparent 90%);
   background-size: 2.2px 2.2px;
+}
+
+.section-heading {
+  margin-top: 3em;
 }
