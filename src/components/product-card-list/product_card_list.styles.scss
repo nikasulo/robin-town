@@ -1,0 +1,11 @@
+@import '../../components';
+
+.product-card-list {
+  justify-content: space-between;
+  padding: 1em;
+
+
+  @media #{$large-mq} {
+    padding: 0 5em;
+  }
+}
