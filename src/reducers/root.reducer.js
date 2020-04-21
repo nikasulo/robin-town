@@ -1,8 +1,9 @@
 import { combineReducers } from "redux";
-import { sharedReducer } from './all.reducer'
+import { sharedReducer, productsReducer } from './all.reducer'
 
 const rootReducer = combineReducers({
     sharedReducer,
+    productsReducer
   }
 );
 
