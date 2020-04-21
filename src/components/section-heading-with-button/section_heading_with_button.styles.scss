@@ -1,0 +1,19 @@
+@import '../../components';
+
+.section-heading {
+  &.with-button {
+    .section-heading-btn {
+      border: none;
+      border-radius: 5px;
+      padding: 1em;
+      background-color: $accent-white;
+      transition: .5s;
+
+      &:hover {
+        background-color: $primary-orange;
+        cursor: pointer;
+        color: $accent-white;
+      }
+    }
+  }
+}
