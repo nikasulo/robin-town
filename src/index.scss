@@ -27,6 +27,15 @@
   flex-flow: column nowrap;
 }
 
+// Logo
+.logo {
+  background-image: url('./assets/logo/1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// Icons
 .search-icon {
   @extend %fa-icon;
   @extend .fas;
@@ -106,6 +115,51 @@
 
   &:before {
     content: fa-content($fa-var-smile-wink);
+  }
+}
+
+.twitter-icon {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-twitter);
+  }
+}
+
+.youtube-icon {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-youtube);
+  }
+}
+
+.linkedin-icon {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-linkedin);
+  }
+}
+
+.facebook-icon {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-facebook);
+  }
+}
+
+.instagram-icon {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-instagram);
   }
 }
 

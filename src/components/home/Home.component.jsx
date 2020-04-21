@@ -7,6 +7,7 @@ import SectionHeading from '../section-heading/SectionHeading.component';
 import SectionHeadingWithButton from '../section-heading-with-button/SectionHeadingWithButton.component';
 import PerkList from '../perk-list/PerkList';
 import Newsletter from '../newsletter/newsletter.component';
+import Footer from '../footer/Footer.component';
 
 const Home = ( { setCurrentLocation } ) => {
   setCurrentLocation("home");
@@ -21,6 +22,7 @@ const Home = ( { setCurrentLocation } ) => {
       <SectionHeading sectionTitle={"Products in today."}/>
       <NewProductsList />
       <Newsletter />
+      <Footer />
     </Fragment>
   )
 };

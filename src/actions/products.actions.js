@@ -1,4 +1,4 @@
-import { API, types, defaultHeaders } from "./components";
+import { API, types } from "./components";
 
 const recieveProducts = (products, productType) => ({
   type: types.RECIEVE_PRODUCTS,

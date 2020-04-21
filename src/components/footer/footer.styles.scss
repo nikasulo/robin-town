@@ -1,0 +1,80 @@
+@import '../../components';
+
+div.footer {
+  align-items: flex-start;
+  font-family: $secondary-font;
+  justify-content: space-between;
+  text-align: center;
+
+  .footer-link {
+    text-decoration: none;
+    color: grey;
+    margin-bottom: 1em;
+    font-size: .8em;
+  }
+
+  .logo {
+    width: 150px;
+    height: 100px;
+
+    @media #{$large-mq} {
+      width: 150px;
+      height: 50px;
+      margin-bottom: 1em;
+    }
+  
+  }
+
+  @media #{$medium-mq} {
+    padding: 4em 5em;
+  }
+  
+  @media #{$large-mq} {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .left {
+    font-size: .7em;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 3em;
+
+    @media #{$large-mq} {
+      width: 70%;
+      text-align: left;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    .sub-text {
+      margin-bottom: 1em;
+      width: 70%;
+    }
+  }
+
+  .center-left {    
+    width: 100%;
+    
+    @media #{$large-mq} {
+      width: 25%;
+    }
+  }
+
+  .center-right {
+    width: 100%;
+    
+    @media #{$large-mq} {
+      width: 25%;
+    }
+  }
+
+  .right {
+    width: 100%;
+    
+    @media #{$large-mq} {
+      width: 25%;
+    }
+  }
+}
