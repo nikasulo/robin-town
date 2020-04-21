@@ -6,6 +6,7 @@ import NewProductsList from '../../containers/new-products-list/NewProductsList.
 import SectionHeading from '../section-heading/SectionHeading.component';
 import SectionHeadingWithButton from '../section-heading-with-button/SectionHeadingWithButton.component';
 import PerkList from '../perk-list/PerkList';
+import Newsletter from '../newsletter/newsletter.component';
 
 const Home = ( { setCurrentLocation } ) => {
   setCurrentLocation("home");
@@ -19,6 +20,7 @@ const Home = ( { setCurrentLocation } ) => {
       <PerkList />
       <SectionHeading sectionTitle={"Products in today."}/>
       <NewProductsList />
+      <Newsletter />
     </Fragment>
   )
 };

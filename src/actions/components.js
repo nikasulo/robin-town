@@ -9,6 +9,6 @@ export const API = Axios.create({
   baseURL: "https://asos2.p.rapidapi.com",
   headers: {
     "x-rapidapi-host": "asos2.p.rapidapi.com",
-    "x-rapidapi-key": "a1dd44e2ffmsh3aef00f95706593p14a95bjsnefeb4c14f217",
+    "x-rapidapi-key": "30be4faf74msha9727ec83d063f3p150ba1jsn041a934fb2cf",
   }
 });
