@@ -1,0 +1,23 @@
+@import '../../components';
+
+.section-heading {
+  justify-content: center;
+  font-family: $secondary-font;
+
+  .section-title {
+    font-family: 1.3em;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  &.with-button {
+    justify-content: space-between;
+    padding: 1em;
+    
+    @media #{$large-mq} {
+      padding: 1em 5em;
+    }
+  }
+}
